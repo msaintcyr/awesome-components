@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PostsResolver } from './resolvers/posts.resolver';
 import { PostListComponent } from './components/post-list/post-list.component';
-import { UsersResolver } from './resolvers/users.resolver';
+import { PostsResolver } from './resolvers/posts.resolver';
 
 const routes: Routes = [
   { path: '', component: PostListComponent, resolve: { posts: PostsResolver } }

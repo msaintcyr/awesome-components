@@ -7,7 +7,9 @@ import { MaterialModule } from './material.module';
 import { ShortenPipe } from './pipes/shorten.pipe';
 import { TimeAgoPipe } from './pipes/time-ago';
 import { UsernamePipe } from './pipes/username.pipe';
-import { MatError } from '@angular/material/form-field';
+import { TimeAgoPipe } from './pipes/time-ago';
+import { HighlightDirective } from './directives/highlight.directive';
+import { RouterLink } from '@angular/router';
 
 @NgModule({
   imports: [
@@ -18,10 +20,7 @@ import { MatError } from '@angular/material/form-field';
     ShortenPipe,
     UsernamePipe,
     TimeAgoPipe,
-    HighlightDirective,
-    NgIf,
-    NgFor,
-    AsyncPipe
+    HighlightDirective
   ],
   exports: [
     RouterLink,
@@ -30,10 +29,7 @@ import { MatError } from '@angular/material/form-field';
     ShortenPipe,
     UsernamePipe,
     TimeAgoPipe,
-    HighlightDirective,
-    NgIf,
-    NgFor,
-    AsyncPipe
+    HighlightDirective
   ]
 })
 export class SharedModule { }

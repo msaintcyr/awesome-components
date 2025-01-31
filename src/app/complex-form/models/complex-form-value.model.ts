@@ -12,10 +12,6 @@ export class ComplexFormValue {
   loginInfo!: {
     username: string,
     password: string,
-<<<<<<< HEAD
     confirmPassword: string
-=======
-    confirmPassword: string,
->>>>>>> a23e02460a48fd6fb65da395ae358b75dff79c02
   };
 }

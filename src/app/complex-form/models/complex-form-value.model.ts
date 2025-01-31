@@ -12,6 +12,6 @@ export class ComplexFormValue {
   loginInfo!: {
     username: string,
     password: string,
-    confirmPassword: string,
+    confirmPassword: string
   };
 }
